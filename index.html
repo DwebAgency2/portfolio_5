@@ -21,10 +21,9 @@
     />
 
     <!------animate on scroll-->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"
-    />
+    
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     <!------swiper js cdn-->
 
@@ -58,7 +57,7 @@
     <!---HERO/HOME SECTION-->
 
     <section class="hero" id="home">
-      <div class="main-content">
+      <div class="main-content"  ">
         <h4>Welcome</h4>
 
         <h1>I'm <span>Maxwell </span> Okojaja</h1>
@@ -97,31 +96,33 @@
     <!---ABOUT SECTION-->
 
     <section class="about" id="about">
-      <div class="about-img">
+      <div class="about-img" data-aos="fade-right"
+      data-aos-offset="300"
+      data-aos-easing="ease-in-sine">
         <img src="./assets/avatar2.jpg" alt="profile image" />
       </div>
 
-      <div class="about-text">
-        <h2>
+      <div class="about-text" >
+        <h2 data-aos="fade-up" data-aos-duration="1000">
           I am a business <span>consultant</span> & a web <span>Developer</span>
         </h2>
 
-        <div class="exp-area">
-          <p class="exp">
+        <div class="exp-area" >
+          <p class="exp" data-aos="fade-up" data-aos-duration="2000">
             Experience:
             <span>5 Years</span>
           </p>
 
-          <p class="exp">Specialty: Web <span> Development</span></p>
+          <p class="exp" data-aos="fade-up" data-aos-duration="2500">Specialty: Web <span> Development</span></p>
 
-          <p class="exp">Freelance : <span>UpWork & Fiverr</span></p>
+          <p class="exp" data-aos="fade-up" data-aos-duration="2700">Freelance : <span>UpWork & Fiverr</span></p>
 
-          <p class="exp">email: <span> Maxwelljaja@gmail.com</span></p>
+          <p class="exp" data-aos="fade-up" data-aos-duration="2900">email: <span> Maxwelljaja@gmail.com</span></p>
 
-          <p class="exp">phone: <span>+2348069282207</span></p>
+          <p class="exp" data-aos="fade-up" data-aos-duration="3000">phone: <span>+2348069282207</span></p>
         </div>
 
-        <a href="#" class="btn">View All Project</a>
+        <a href="#" class="btn" data-aos="fade-up" data-aos-duration="3500">View All Project</a>
       </div>
     </section>
 
@@ -408,6 +409,9 @@
       </div>
     </section>
 
+
+    
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="./script.js"></script>
   </body>
