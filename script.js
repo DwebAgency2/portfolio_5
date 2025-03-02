@@ -46,3 +46,44 @@ function addAnimation () {
 }
 
 
+const swiper = new Swiper('.swiper', {
+  loop: true,
+  spaceBetween: 20,
+  grabCursor: true,
+  centeredSlides: true,
+  slidesPerView: 'auto',
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+  autoplay: {
+    delay: 3000,
+    disableOnInteraction: false,
+  },
+});
+
+
+
+
+
+document.addEventListener("DOMContentLoaded", function () {
+  const menuIcon = document.getElementById("menu_icon");
+  const navList = document.querySelector(".navlist");
+  const navLinks = document.querySelectorAll(".navlist a");
+
+  // Toggle menu on menu icon click
+  menuIcon.addEventListener("click", function () {
+    navList.classList.toggle("active");
+  });
+
+  // Hide menu when clicking on a menu item
+  navLinks.forEach(link => {
+    link.addEventListener("click", function () {
+      navList.classList.remove("active");
+    });
+  });
+});
