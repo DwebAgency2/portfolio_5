@@ -699,7 +699,7 @@ h4 {
 
 
 /* For Mobile Devices (Below 768px) */
-@media (max-width: 950px) {
+@media screen and (max-width: 950px) {
 
   :root{
     --h1-font: 4rem;
@@ -826,7 +826,7 @@ h4 {
 }
 }
 
-@media (max-width: 680px) {
+@media screen and (max-width: 680px) {
   #menu_icon {
     
     margin-left: 70%;
@@ -839,7 +839,7 @@ h4 {
   }
 }
 
-@media (max-width: 470px) {
+@media screen and (max-width: 470px) {
   #menu_icon {
     
     margin-left: 50%;
@@ -857,6 +857,11 @@ h4 {
     width: 70%;
     height: 100%;
     max-height: 100%;
+  }
+
+  input .btn {
+    font-size: 10px;
+    text-align: center;
   }
 
 }
