@@ -722,7 +722,7 @@ h4 {
 
   #menu_icon {
     display: block; /* Show menu icon */
-    margin-left: 80%;
+    margin-left: 70%;
    
   }
 
@@ -829,13 +829,21 @@ h4 {
 @media screen and (max-width: 680px) {
   #menu_icon {
     
-    margin-left: 70%;
+    margin-right: 50%;
    
+  }
+
+  header{
+    padding: 20px 4%;
   }
 
 
   .main-content p {
     width: 100%;
+  }
+
+  .main-content h4{
+    margin-top: 2.5rem;
   }
 }
 
@@ -844,6 +852,9 @@ h4 {
     
     margin-left: 50%;
    
+  }
+  .main-content h4{
+    margin-top: 2.5rem;
   }
 
   :root{
